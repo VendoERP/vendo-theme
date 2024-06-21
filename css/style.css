@@ -1,14 +1,14 @@
 .v-list .v-card.tf-noborder {
   margin: var(--tv-default-margin) !important;
 }
-.v-list .v-card.tf-noborder header {
+.v-list .v-card.tf-noborder > header {
   background-color: #f7f7f7;
   border: 1px solid #e1e5e9;
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.v-list .v-card.tf-noborder section {
+.v-list .v-card.tf-noborder > section {
   border: 1px solid #e1e5e9;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

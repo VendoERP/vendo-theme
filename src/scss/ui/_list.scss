@@ -2,14 +2,14 @@
 
     margin: var(--tv-default-margin)!important;
     
-    header{
+    > header{
         background-color: #f7f7f7;
         border: 1px solid #e1e5e9;
         border-bottom: none;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    section{
+    > section{
         border:1px solid #e1e5e9;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
