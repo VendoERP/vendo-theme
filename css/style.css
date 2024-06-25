@@ -25,8 +25,11 @@
 .t-documentation {
   height: 100%;
 }
-.t-documentation > div:nth-of-type(2) {
-  height: 95% !important;
+.t-documentation .tl-split {
+  height: 100%;
+}
+.t-documentation .td-webview {
+  max-height: auto;
 }
 
 .tl:not(.t-documentation, .v-list):has(> .row > * > .td-webview) {
