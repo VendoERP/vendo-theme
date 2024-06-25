@@ -1,3 +1,16 @@
 .v-timeline-diference{
     height: 100svh!important;
 }
+
+.t-documentation{
+    height: 100%;
+    > div:nth-of-type(2){
+        height: 95%!important;
+    }
+}
+.tl:not(.t-documentation, .v-list):has(>.row > * >.td-webview){
+    height:calc(100%);
+}
+.tl:not(.t-documentation, .v-list) .row:has(* >.td-webview){
+    height:calc(100% - 120px);
+}
