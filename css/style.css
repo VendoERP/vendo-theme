@@ -28,14 +28,29 @@
 .t-documentation .tl-split {
   height: 100%;
 }
-.t-documentation .td-webview {
-  max-height: auto;
+
+.t-documentation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
-.tl:not(.t-documentation, .v-list):has(> .row > * > .td-webview) {
+.t-documentation > div {
+  overflow: hidden;
+}
+
+.t-documentation > div:has(> .tl-split) {
+  flex: 1 1 auto;
+}
+
+.t-documentation iframe {
+  max-height: 100%;
+  padding: 0 var(--tv-default-margin);
+  padding-bottom: 0;
+}
+
+.t-documentation .tl-split-panel:has(iframe) div {
   height: 100%;
-}
-
-.tl:not(.t-documentation, .v-list) .row:has(* > .td-webview) {
-  height: calc(100% - 120px);
+  overflow: hidden;
 }
