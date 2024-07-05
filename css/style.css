@@ -54,3 +54,12 @@
   height: 100%;
   overflow: hidden;
 }
+
+section:has(> .v-conversation) {
+  padding: 0px;
+  overflow: hidden;
+}
+section:has(> .v-conversation) > .v-conversation {
+  padding: 0;
+  max-height: 100%;
+}
