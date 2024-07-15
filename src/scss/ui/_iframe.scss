@@ -40,3 +40,12 @@ section:has(>.v-conversation){
         max-height: 100%;
     }
 }
+
+.tl:has(.v-task-timeline) {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.row:has(.v-task-timeline) {
+    height:100%;
+}

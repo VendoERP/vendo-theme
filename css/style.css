@@ -63,3 +63,13 @@ section:has(> .v-conversation) > .v-conversation {
   padding: 0;
   max-height: 100%;
 }
+
+.tl:has(.v-task-timeline) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row:has(.v-task-timeline) {
+  height: 100%;
+}
