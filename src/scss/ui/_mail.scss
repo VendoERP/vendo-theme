@@ -1,0 +1,18 @@
+.v-mail-list *{
+    border-color: var(--t-table-accent-background-color)!important;
+}
+
+.v-mail-list .td-datagrid-rs {
+    height: 1px!important;
+}
+.v-mail-list .td-datagrid-rs td{
+    padding:0!important;
+    background-color:#dee2e6!important;
+}
+
+.v-mail-list tbody:hover tr{
+    background-color: #ebf1fa !important;
+    background-color: 
+    color-mix(in srgb, #3b71ca, #ffffff 90%) !important;
+    transition: 0.1s;
+}
