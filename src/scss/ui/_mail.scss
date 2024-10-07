@@ -16,3 +16,15 @@
     color-mix(in srgb, #3b71ca, #ffffff 90%) !important;
     transition: 0.1s;
 }
+
+.tl-stack:has(>*>.v-mail-view){
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+}
+div:has(>.v-mail-view){
+    flex:1;
+}
+.v-mail-view{
+    min-height:300px;
+}
