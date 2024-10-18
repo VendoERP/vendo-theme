@@ -12,8 +12,8 @@
 
 .v-mail-list tbody:hover tr{
     background-color: #ebf1fa !important;
-    background-color: 
-    color-mix(in srgb, #3b71ca, #ffffff 90%) !important;
+    /*background-color: 
+    color-mix(in srgb, #3b71ca, #ffffff 90%) !important;*/
     transition: 0.1s;
 }
 
@@ -27,4 +27,16 @@ div:has(>.v-mail-view){
 }
 .v-mail-view{
     min-height:300px;
+}
+html[data-bs-theme=dark]{
+    .v-mail-list *{
+        border-color: var(--t-border-color)!important;
+    }
+    .v-mail-list .td-datagrid-rs td{
+        background-color:var(--content-background-hover-color)!important;
+    }
+    
+    .v-mail-list tbody:hover tr{
+        background-color: var(--content-background-hover-color) !important;
+    }
 }

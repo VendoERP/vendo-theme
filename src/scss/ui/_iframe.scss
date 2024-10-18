@@ -49,3 +49,9 @@ section:has(>.v-conversation){
 .row:has(.v-task-timeline) {
     height:100%;
 }
+.v-task-timeline{
+    padding:0;
+}
+section section:has(.v-task-timeline){
+    padding:0;
+}
