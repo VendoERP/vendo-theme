@@ -125,3 +125,6 @@ html[data-bs-theme=dark] .v-mail-list .td-datagrid-rs td {
 html[data-bs-theme=dark] .v-mail-list tbody:hover tr {
   background-color: var(--content-background-hover-color) !important;
 }
+html[data-bs-theme=dark] .v-mail-list a i {
+  color: #7be995 !important;
+}

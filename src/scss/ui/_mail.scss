@@ -39,4 +39,7 @@ html[data-bs-theme=dark]{
     .v-mail-list tbody:hover tr{
         background-color: var(--content-background-hover-color) !important;
     }
+    .v-mail-list a i{
+        color: #7be995!important 
+       }
 }
