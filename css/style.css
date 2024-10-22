@@ -116,6 +116,10 @@ div:has(> .v-mail-view) {
   min-height: 300px;
 }
 
+.v-mail-editor {
+  min-height: 500px;
+}
+
 html[data-bs-theme=dark] .v-mail-list * {
   border-color: var(--t-border-color) !important;
 }
