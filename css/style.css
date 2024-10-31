@@ -82,8 +82,8 @@ section section:has(.v-task-timeline) {
   padding: 0;
 }
 
-.v-aichat {
-  min-height: 800px;
+section div:has(.v-aichat) {
+  height: 95%;
 }
 
 .v-mail-list * {
