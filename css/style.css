@@ -82,6 +82,10 @@ section section:has(.v-task-timeline) {
   padding: 0;
 }
 
+.v-aichat {
+  min-height: 800px;
+}
+
 .v-mail-list * {
   border-color: var(--t-table-accent-background-color) !important;
 }
