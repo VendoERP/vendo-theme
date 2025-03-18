@@ -1,17 +1,27 @@
-.v-list .v-card.tf-noborder{
+.v-list .v-card.tf-noborder {
+    margin: var(--tv-default-margin) !important;
 
-    margin: var(--tv-default-margin)!important;
-    
-    > header{
+    > header {
         background-color: #f7f7f7;
         border: 1px solid #e1e5e9;
         border-bottom: none;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    > section{
-        border:1px solid #e1e5e9;
+    > section {
+        border: 1px solid #e1e5e9;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+}
+
+html[data-bs-theme="dark"] .v-list .v-card.tf-noborder > header {
+    background-color: unset;
+    border-color: var(--t-border-color);
+}
+
+html[data-bs-theme="dark"] .v-list .v-card.tf-noborder > section {
+    border: 1px solid var(--t-border-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
