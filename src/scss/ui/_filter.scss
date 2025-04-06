@@ -1,0 +1,8 @@
+
+.v-catalog-filter{
+    --v-catalog-filter: 400px;
+    min-height: auto!important;
+    .td-datagrid{
+        max-height: var(--v-catalog-filter);
+    }
+}
