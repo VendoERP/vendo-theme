@@ -1,3 +1,7 @@
+.v-list {
+  table-layout: fixed;
+}
+
 .v-list .v-card.tf-noborder {
   margin: var(--tv-default-margin) !important;
 }
@@ -33,9 +37,6 @@ html[data-bs-theme=dark] .v-list .v-card.tf-noborder > section {
   height: 100svh !important;
 }
 
-.t-documentation {
-  height: 100%;
-}
 .t-documentation .tl-split {
   height: 100%;
 }
