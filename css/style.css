@@ -4,6 +4,8 @@
 
 .v-list .v-card.tf-noborder {
   margin: var(--tv-default-margin) !important;
+  margin-bottom: 0px !important;
+  height: calc(100% - var(--tv-default-full-margin)) !important;
 }
 .v-list .v-card.tf-noborder > header {
   background-color: #f7f7f7;
