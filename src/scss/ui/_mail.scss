@@ -1,4 +1,4 @@
-.v-mail-list tbody:hover tr{
+.v-mail-client__list tbody:hover tr{
     background-color: #ebf1fa !important;
     transition: 0.1s;
 }
@@ -19,10 +19,39 @@ div:has(>.v-mail-view){
 }
 html[data-bs-theme=dark]{
 
-    .v-mail-list tbody:hover tr{
+    .v-mail-client__list tbody:hover tr{
         background-color: var(--content-background-hover-color) !important;
     }
-    .v-mail-list a i{
+    .v-mail-client__list a i{
         color: #7be995!important 
+    }
+}
+
+
+
+
+
+
+section:has(> .v-mail-client){
+    height:100%;
+    overflow:hidden;
+}
+
+.v-mail-client{
+    height:100%;
+    *:not(input,header,table,colgroup,section){
+        height:inherit;
+    }
+    .v-mail-client__structure{
+        height: calc(100% - 8px);
+        overflow:auto;
+    }
+    .v-mail-client__preview{
+        height: calc(100% - 8px);
+        overflow:auto;
+    }
+    .v-mail-client__list{
+        height: calc(100% - 8px);
+        overflow:auto;
     }
 }

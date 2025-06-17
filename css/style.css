@@ -100,7 +100,7 @@ section div:has(.v-aichat) {
   height: 95%;
 }
 
-.v-mail-list tbody:hover tr {
+.v-mail-client__list tbody:hover tr {
   background-color: #ebf1fa !important;
   transition: 0.1s;
 }
@@ -123,11 +123,35 @@ div:has(> .v-mail-view) {
   min-height: 500px;
 }
 
-html[data-bs-theme=dark] .v-mail-list tbody:hover tr {
+html[data-bs-theme=dark] .v-mail-client__list tbody:hover tr {
   background-color: var(--content-background-hover-color) !important;
 }
-html[data-bs-theme=dark] .v-mail-list a i {
+html[data-bs-theme=dark] .v-mail-client__list a i {
   color: #7be995 !important;
+}
+
+section:has(> .v-mail-client) {
+  height: 100%;
+  overflow: hidden;
+}
+
+.v-mail-client {
+  height: 100%;
+}
+.v-mail-client *:not(input, header, table, colgroup, section) {
+  height: inherit;
+}
+.v-mail-client .v-mail-client__structure {
+  height: calc(100% - 8px);
+  overflow: auto;
+}
+.v-mail-client .v-mail-client__preview {
+  height: calc(100% - 8px);
+  overflow: auto;
+}
+.v-mail-client .v-mail-client__list {
+  height: calc(100% - 8px);
+  overflow: auto;
 }
 
 .v-catalog-filter {
