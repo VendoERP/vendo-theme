@@ -181,3 +181,15 @@ section:has(> .v-mail-client) {
     overflow: hidden;
   }
 }
+button[class*=btn-] {
+  background-color: transparent;
+  color: var(--t-font-color);
+}
+button[class*=btn-]:hover {
+  background-color: var(--bs-btn-hover-bg);
+  color: #ffffff;
+  border-color: var(--bs-btn-hover-border-color);
+}
+button[class*=btn-]:hover i {
+  color: #ffffff !important;
+}

@@ -1,0 +1,12 @@
+button[class*="btn-"]{
+    background-color: transparent;
+    color: var(--t-font-color);
+    &:hover{
+            background-color: var(--bs-btn-hover-bg);
+            color: #ffffff;
+            border-color:var(--bs-btn-hover-border-color);
+        & i{
+            color: #ffffff!important;
+        }
+    }
+}
