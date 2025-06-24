@@ -1,4 +1,5 @@
-.v-mail-client__list tbody:hover tr{
+.v-mail-client__list tbody:hover tr,
+.v-mail-list tbody:hover tr{
     background-color: #ebf1fa !important;
     transition: 0.1s;
 }
@@ -54,4 +55,17 @@ section:has(> .v-mail-client){
         height: calc(100% - 8px);
         overflow:auto;
     }
+}
+
+.v-mail-client__list, .v-mail-list{
+    tbody *{
+        border:none;
+    }
+    tbody.td-datagrid-rs {
+        height:1px!important;
+        tr  td{
+        background-color:var(--t-border-color)!important;
+        padding:0px!important;
+        }
+   }
 }

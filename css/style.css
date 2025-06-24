@@ -100,7 +100,8 @@ section div:has(.v-aichat) {
   height: 95%;
 }
 
-.v-mail-client__list tbody:hover tr {
+.v-mail-client__list tbody:hover tr,
+.v-mail-list tbody:hover tr {
   background-color: #ebf1fa !important;
   transition: 0.1s;
 }
@@ -152,6 +153,17 @@ section:has(> .v-mail-client) {
 .v-mail-client .v-mail-client__list {
   height: calc(100% - 8px);
   overflow: auto;
+}
+
+.v-mail-client__list tbody *, .v-mail-list tbody * {
+  border: none;
+}
+.v-mail-client__list tbody.td-datagrid-rs, .v-mail-list tbody.td-datagrid-rs {
+  height: 1px !important;
+}
+.v-mail-client__list tbody.td-datagrid-rs tr td, .v-mail-list tbody.td-datagrid-rs tr td {
+  background-color: var(--t-border-color) !important;
+  padding: 0px !important;
 }
 
 .v-catalog-filter {
