@@ -67,5 +67,8 @@ section:has(> .v-mail-client){
         background-color:var(--t-border-color)!important;
         padding:0px!important;
         }
+        td{
+            height: 1px;
+        }
    }
 }

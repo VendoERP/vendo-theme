@@ -165,6 +165,9 @@ section:has(> .v-mail-client) {
   background-color: var(--t-border-color) !important;
   padding: 0px !important;
 }
+.v-mail-client__list tbody.td-datagrid-rs td, .v-mail-list tbody.td-datagrid-rs td {
+  height: 1px;
+}
 
 .v-catalog-filter {
   --v-catalog-filter: 400px;
