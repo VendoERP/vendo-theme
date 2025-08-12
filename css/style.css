@@ -100,6 +100,10 @@ section div:has(.v-aichat) {
   height: 95%;
 }
 
+.v-article-80vh {
+  height: 80vh !important;
+}
+
 .v-mail-client__list tbody:hover tr,
 .v-mail-list tbody:hover tr {
   background-color: #ebf1fa !important;
