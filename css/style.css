@@ -212,3 +212,8 @@ button[class*=btn-]:hover {
 button[class*=btn-]:hover i {
   color: #ffffff !important;
 }
+
+.v-filepreview {
+  height: calc((100vh - 250px) * 0.8) !important;
+  min-height: 550px !important;
+}
