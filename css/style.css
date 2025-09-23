@@ -217,3 +217,11 @@ button[class*=btn-]:hover i {
   height: calc((100vh - 250px) * 0.8) !important;
   min-height: 550px !important;
 }
+
+.v-gpsHistory > .page > section {
+  height: 100vh;
+}
+
+.v-gpsHistory > .page > section iframe {
+  max-height: 99%;
+}
