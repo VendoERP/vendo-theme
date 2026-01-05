@@ -30,3 +30,10 @@ html[data-bs-theme="dark"] .v-list .v-card.tf-noborder > section {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+
+.te-search:not(:placeholder-shown){
+    -webkit-appearance: none;
+    border-color: var(--bs-danger)!important;
+    box-shadow: none !important;
+}
