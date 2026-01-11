@@ -1,3 +1,29 @@
-.v-calendar{
-    
+.v-scheduler-container {
+    height: 100%;
+    overflow: hidden;
+
+    .tf-h-100 {
+        height: 100%;
+    }
+
+    *:has(.td-webview) {
+        height: 100%;
+    }
+    .td-webview,
+    .tl-split-panel {
+        overflow-y: auto;
+    }
+    .td-webview {
+        height: 100%;
+    }
+    .tbs-scheduler {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section:has(> .v-scheduler-container) {
+        padding: 0;
+    }
 }

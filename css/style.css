@@ -235,3 +235,31 @@ button[class*=btn-]:hover i {
 .v-map {
   height: 100vh !important;
 }
+
+.v-scheduler-container {
+  height: 100%;
+  overflow: hidden;
+}
+.v-scheduler-container .tf-h-100 {
+  height: 100%;
+}
+.v-scheduler-container *:has(.td-webview) {
+  height: 100%;
+}
+.v-scheduler-container .td-webview,
+.v-scheduler-container .tl-split-panel {
+  overflow-y: auto;
+}
+.v-scheduler-container .td-webview {
+  height: 100%;
+}
+.v-scheduler-container .tbs-scheduler {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  section:has(> .v-scheduler-container) {
+    padding: 0;
+  }
+}
