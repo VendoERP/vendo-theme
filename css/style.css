@@ -263,3 +263,15 @@ button[class*=btn-]:hover i {
     padding: 0;
   }
 }
+.v-scheduler-datails ul {
+  padding-left: 0rem;
+}
+.v-scheduler-datails ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+.v-scheduler-datails ul li > span {
+  white-space: nowrap;
+  margin-left: 6px;
+}
