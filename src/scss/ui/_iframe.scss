@@ -61,3 +61,10 @@ section div:has(.v-aichat){
 iframe.v-article-80vh{
     height: 80vh!important;
 }
+
+.v-docraw{
+    height: 99% !important;
+}
+section div:has(.v-docraw){
+    height:95%;
+}
