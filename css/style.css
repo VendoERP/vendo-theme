@@ -288,7 +288,7 @@ button[class*=btn-]:hover i {
   border-radius: 10px;
   will-change: transfrom, opacity;
   Aanimation: show-window 3s ease-out forwards;
-  transition: opacity 0.3s ease-out, transform;
+  transition: opacity 0.4s ease-out, transform;
   position: absolute;
   --new-card-margin: 16px;
   --new-card-margin-x2: calc(var(--new-card-margin) * 2);
@@ -331,4 +331,8 @@ html[data-bs-theme=dark] .tw-window.v-card {
 .tw-window:has(+ .tw-window.v-card) {
   filter: blur(2px);
   opacity: 1 !important;
+}
+
+.tw-split .tw-window.v-card {
+  position: relative;
 }

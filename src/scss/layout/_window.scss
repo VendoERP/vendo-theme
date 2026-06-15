@@ -3,7 +3,7 @@
 border-radius: 10px;
   will-change: transfrom, opacity;
   Aanimation: show-window 3s ease-out forwards;
-  transition: opacity .3s ease-out, transform;
+  transition: opacity .4s ease-out, transform;
 
   position: absolute;
     --new-card-margin: 16px;
@@ -54,3 +54,7 @@ border-radius: 10px;
   opacity:1 !important;
 }
 
+
+.tw-split .tw-window.v-card{
+  position: relative;
+}
