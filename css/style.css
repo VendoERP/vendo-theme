@@ -336,3 +336,7 @@ html[data-bs-theme=dark] .tw-window.v-card {
 .tw-split .tw-window.v-card {
   position: relative;
 }
+
+.tw-window.t-fill-box {
+  height: 100svh !important;
+}
