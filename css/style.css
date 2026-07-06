@@ -118,6 +118,10 @@ section div:has(.v-docraw) {
   height: 95%;
 }
 
+.t-changelog {
+  height: calc(100svh - (2 * var(--tv-default-full-margin) + 4 * var(--tv-default-section-padding))) !important;
+}
+
 .v-mail-client__list tbody:hover tr,
 .v-mail-list tbody:hover tr {
   background-color: #ebf1fa !important;

@@ -68,3 +68,8 @@ iframe.v-article-80vh{
 section div:has(.v-docraw){
     height:95%;
 }
+
+
+.t-changelog{
+    height: calc(100svh - calc(calc(2 * var(--tv-default-full-margin)) + calc(4 * var(--tv-default-section-padding))))!important;
+}
