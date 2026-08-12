@@ -122,6 +122,10 @@ section div:has(.v-docraw) {
   height: calc(100svh - (2 * var(--tv-default-full-margin) + 4 * var(--tv-default-section-padding))) !important;
 }
 
+section section:has(section > iframe.t-githistory) .tf-h-100 {
+  height: 100%;
+}
+
 .v-mail-client__list tbody:hover tr,
 .v-mail-list tbody:hover tr {
   background-color: #ebf1fa !important;

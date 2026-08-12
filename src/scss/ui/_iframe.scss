@@ -73,3 +73,10 @@ section div:has(.v-docraw){
 .t-changelog{
     height: calc(100svh - calc(calc(2 * var(--tv-default-full-margin)) + calc(4 * var(--tv-default-section-padding))))!important;
 }
+
+
+section section:has(section > iframe.t-githistory){
+    .tf-h-100{
+    height:100%;
+    }
+}
