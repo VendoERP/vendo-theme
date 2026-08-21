@@ -54,6 +54,7 @@ html[data-bs-theme=dark] .v-list .v-card.tf-noborder > section {
   flex-direction: column;
   width: 100%;
   flex-wrap: nowrap;
+  height: 100%;
 }
 
 .t-documentation > div {
