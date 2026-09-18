@@ -28,7 +28,13 @@
 .t-documentation .tl-split-panel:has(iframe) div{
     height:100%;
     overflow:hidden;
-    
+
+}
+
+.tw-window.t-documentation{
+    iframe{
+      max-height: calc(100vh - 200px);
+    }
 }
 
 

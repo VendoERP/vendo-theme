@@ -76,6 +76,10 @@ html[data-bs-theme=dark] .v-list .v-card.tf-noborder > section {
   overflow: hidden;
 }
 
+.tw-window.t-documentation iframe {
+  max-height: calc(100vh - 200px);
+}
+
 section:has(> .v-conversation) {
   padding: 0px;
   overflow: hidden;
