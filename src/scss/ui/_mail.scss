@@ -1,74 +1,103 @@
 .v-mail-client__list tbody:hover tr,
-.v-mail-list tbody:hover tr{
+.v-mail-list tbody:hover tr {
     background-color: #ebf1fa !important;
     transition: 0.1s;
 }
 
-.tl-stack:has(>*>.v-mail-view){
+.tl-stack:has(> * > .v-mail-view) {
     flex-wrap: nowrap;
     flex-direction: column;
     height: 100%;
 }
-div:has(>.v-mail-view){
-    flex:1;
+div:has(> .v-mail-view) {
+    flex: 1;
 }
-.v-mail-view{
-    min-height:300px;
+.v-mail-view {
+    min-height: 300px;
 }
-.v-mail-editor{
+.v-mail-editor {
     min-height: 500px;
 }
-html[data-bs-theme=dark]{
-
-    .v-mail-client__list tbody:hover tr{
+html[data-bs-theme="dark"] {
+    .v-mail-client__list tbody:hover tr {
         background-color: var(--content-background-hover-color) !important;
     }
-    .v-mail-client__list a i{
-        color: #7be995!important 
+    .v-mail-client__list a i {
+        color: #7be995 !important;
     }
 }
 
-
-
-
-
-
-section:has(> .v-mail-client){
-    height:100%;
-    overflow:hidden;
-}
-
-.v-mail-client{
-    height:100%;
-    *:not(input,header,table,colgroup,section){
-        height:inherit;
+.v-mail-client__list {
+    tbody:not(.td-datagrid-rs) > tr > td {
+        border: none !important;
+        border-width: 0 !important;
     }
-    .v-mail-client__structure{
-        height: calc(100% - 8px);
-        overflow:auto;
-    }
-    .v-mail-client__preview{
-        height: calc(100% - 8px);
-        overflow:auto;
-    }
-    .v-mail-client__list{
-        height: calc(100% - 8px);
-        overflow:auto;
+    .td-datagrid-rs > tr > td {
+        border: none;
     }
 }
 
-.v-mail-client__list, .v-mail-list{
-    tbody *{
-        border:none;
+@media only screen and (max-width: 768px) {
+  .v-mail-client__list tbody:not(.td-datagrid-rs) > tr > td,
+  .v-mail-client__list tbody:not(.td-datagrid-rs) > tr,
+  .v-mail-client__list tbody:not(.td-datagrid-rs){
+    border: none !important;
+    border-width: 0 !important;
+    background-color:unset!important;
+  }
+  .v-mail-client__list .td-datagrid-rs > tr > td,
+  .v-mail-client__list .td-datagrid-rs > tr {
+    border: none;
+    height:1px!important;
+  }
+  .v-mail-client__list .td-datagrid-rs{
+    border: none;
+    border-top-width: 1px;
+  }
+  .v-mail-client__list{
+    table{
+        background-color: unset!important;
+    }
+  }
+}
+
+section:has(> .v-mail-client) {
+    height: 100%;
+    overflow: hidden;
+}
+
+.v-mail-client {
+    height: 100%;
+    *:not(input, header, table, colgroup, section) {
+        height: inherit;
+    }
+    .v-mail-client__structure {
+        height: calc(100% - 8px);
+        overflow: auto;
+    }
+    .v-mail-client__preview {
+        height: calc(100% - 8px);
+        overflow: auto;
+    }
+    .v-mail-client__list {
+        height: calc(100% - 8px);
+        overflow: auto;
+    }
+}
+
+.v-mail-client__list,
+.v-mail-list {
+    tbody * {
+        border: none;
     }
     tbody.td-datagrid-rs {
-        height:1px!important;
-        tr  td{
-        background-color:var(--t-border-color)!important;
-        padding:0px!important;
+        height: 1px !important;
+        tr td {
+            background-color: var(--t-border-color) !important;
+            padding: 0px !important;
         }
-        td{
+        td {
             height: 1px;
         }
-   }
+    }
 }

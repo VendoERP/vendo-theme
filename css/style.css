@@ -162,6 +162,35 @@ html[data-bs-theme=dark] .v-mail-client__list a i {
   color: #7be995 !important;
 }
 
+.v-mail-client__list tbody:not(.td-datagrid-rs) > tr > td {
+  border: none !important;
+  border-width: 0 !important;
+}
+.v-mail-client__list .td-datagrid-rs > tr > td {
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .v-mail-client__list tbody:not(.td-datagrid-rs) > tr > td,
+  .v-mail-client__list tbody:not(.td-datagrid-rs) > tr,
+  .v-mail-client__list tbody:not(.td-datagrid-rs) {
+    border: none !important;
+    border-width: 0 !important;
+    background-color: unset !important;
+  }
+  .v-mail-client__list .td-datagrid-rs > tr > td,
+  .v-mail-client__list .td-datagrid-rs > tr {
+    border: none;
+    height: 1px !important;
+  }
+  .v-mail-client__list .td-datagrid-rs {
+    border: none;
+    border-top-width: 1px;
+  }
+  .v-mail-client__list table {
+    background-color: unset !important;
+  }
+}
 section:has(> .v-mail-client) {
   height: 100%;
   overflow: hidden;
@@ -186,17 +215,21 @@ section:has(> .v-mail-client) {
   overflow: auto;
 }
 
-.v-mail-client__list tbody *, .v-mail-list tbody * {
+.v-mail-client__list tbody *,
+.v-mail-list tbody * {
   border: none;
 }
-.v-mail-client__list tbody.td-datagrid-rs, .v-mail-list tbody.td-datagrid-rs {
+.v-mail-client__list tbody.td-datagrid-rs,
+.v-mail-list tbody.td-datagrid-rs {
   height: 1px !important;
 }
-.v-mail-client__list tbody.td-datagrid-rs tr td, .v-mail-list tbody.td-datagrid-rs tr td {
+.v-mail-client__list tbody.td-datagrid-rs tr td,
+.v-mail-list tbody.td-datagrid-rs tr td {
   background-color: var(--t-border-color) !important;
   padding: 0px !important;
 }
-.v-mail-client__list tbody.td-datagrid-rs td, .v-mail-list tbody.td-datagrid-rs td {
+.v-mail-client__list tbody.td-datagrid-rs td,
+.v-mail-list tbody.td-datagrid-rs td {
   height: 1px;
 }
 
