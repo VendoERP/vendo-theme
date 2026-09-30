@@ -68,7 +68,7 @@ section:has(> .v-mail-client) {
 
 .v-mail-client {
     height: 100%;
-    *:not(input, header, table, colgroup, section) {
+    *:not(input, header, table, colgroup, section, footer) {
         height: inherit;
     }
     .v-mail-client__structure {
