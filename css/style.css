@@ -233,6 +233,10 @@ section:has(> .v-mail-client) {
   height: 1px;
 }
 
+.v-mail-client__structure table > tbody > tr {
+  border-bottom: none;
+}
+
 .v-catalog-filter {
   --v-catalog-filter: 400px;
   min-height: auto !important;

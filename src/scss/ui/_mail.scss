@@ -101,3 +101,6 @@ section:has(> .v-mail-client) {
         }
     }
 }
+.v-mail-client__structure table > tbody > tr{
+border-bottom: none;
+}
