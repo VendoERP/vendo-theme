@@ -64,8 +64,12 @@ section section:has(.v-task-timeline){
 section div:has(.v-aichat){
     height:100%;
 }
-div:has(>.v-aichat){
-    max-height:calc(100% - 47px);
+div:has(> .v-aichat) {
+  max-height: calc(100% - 47px)!important;
+}
+
+div:not(.tl):has(> div > .v-aichat) {
+  max-height: calc(100% - 47px)!important;
 }
 iframe.v-article-80vh{
     height: 80vh!important;

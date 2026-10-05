@@ -112,7 +112,11 @@ section div:has(.v-aichat) {
 }
 
 div:has(> .v-aichat) {
-  max-height: calc(100% - 47px);
+  max-height: calc(100% - 47px) !important;
+}
+
+div:not(.tl):has(> div > .v-aichat) {
+  max-height: calc(100% - 47px) !important;
 }
 
 iframe.v-article-80vh {
