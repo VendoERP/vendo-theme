@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .v-list {
   table-layout: fixed;
 }
@@ -197,6 +198,79 @@ html[data-bs-theme=dark] .v-mail-client__list a i {
   }
   .v-mail-client__list table {
     background-color: unset !important;
+  }
+}
+/* Lista poczty w widoku kafelkowym (TagBites ui/_listMobile.scss).
+   Poczta nie ma zagnieżdżonej tabeli .td-datagrid-details — to płaskie
+   wiersze z rowspan="3":
+
+     tbody
+       tr
+         td.text-center[rowspan=3]   <- zaznaczanie
+         td.text-center[rowspan=3]   <- awatar
+         td[colspan=4]               <- nadawca
+         td.text-center              <- pobranie
+         td.td-datagrid-toolbox[rowspan=3]
+       tr > td[colspan=5]            <- temat
+       tr > td                       <- data, status, załącznik
+
+   Rekordy mają się stykać, rozdzielone jedną linią u góry — cofamy
+   ozdoby kafelka (ramka, zaokrąglenie, cień). Prefiks "section > table"
+   wyrównuje specyficzność z regułami kafelka z TagBites, a ten arkusz
+   ładuje się po nim, więc wygrywa. */
+@media (max-width: 767.98px) {
+  .v-mail-client__list {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .v-mail-client__list section > table > colgroup > col:first-child {
+    width: 0 !important;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs) > tr > td.text-center:first-child {
+    width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: visible;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs) {
+    position: relative;
+    border: none !important;
+    border-top: 1px solid var(--table-tile-border) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs)::before {
+    content: none;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs).tf-active {
+    border-top-color: var(--table-tile-border) !important;
+    border-left: 1px solid var(--table-tile-accent) !important;
+    border-right: 1px solid var(--table-tile-accent) !important;
+    box-shadow: none !important;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs):not(.tf-active) > tr > td:not([style*=background]) {
+    background-color: transparent !important;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs) > tr > td.text-center[rowspan]:nth-child(2) {
+    vertical-align: top !important;
+    padding-top: 37px !important;
+  }
+  .v-mail-client__list section > table > tbody:not(.td-datagrid-rs) > tr > td.text-center:first-child .tp-checkbox {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 3;
+  }
+  .v-mail-client__list section > table > tbody.td-datagrid-rs,
+  .v-mail-client__list section > table > tbody.td-datagrid-rs > tr,
+  .v-mail-client__list section > table > tbody.td-datagrid-rs > tr > td {
+    height: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    border: none !important;
   }
 }
 section:has(> .v-mail-client) {
